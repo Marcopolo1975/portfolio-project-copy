@@ -30,7 +30,7 @@ SECRET_KEY = 'django-insecure--h2wowbq%09hj@qqd-5tj*2)-+_-nu0*8^+tctou*nidd!tas1
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['localhost','.herokuapp.com']
+ALLOWED_HOSTS = ['localhost','.herokuapp.com', '127.0.0.1']
 
 
 # Application definition
@@ -90,6 +90,11 @@ DATABASES = {
     'default': dj_database_url.parse(os.environ.get("DATABASE_URL"))
 }
 
+CSRF_TRUSTED_ORIGINS = [
+    "https://*.codeanyapp.com",
+    "https://*.herokuapp.com",
+    'http://*localhost'
+]
 
 # Password validation
 # https://docs.djangoproject.com/en/4.2/ref/settings/#auth-password-validators
