@@ -2,11 +2,14 @@ body {
     background-color: #F9FAFC;
 }
 
+
 .brand {
     font-family: Lato, sans-serif;
-    font-size: 1.4rem;
+    font-size: 2.4rem;
     font-weight: 700;
     color: #4A4A4F;
+    text-decoration: underline;
+    text-decoration-color: red;
 }
 
 .red-o {
@@ -14,8 +17,36 @@ body {
 }
 
 .thin {
+    font-size: 1.4rem;
     font-weight: 300;
 }
+
+.navbar-text {
+    margin-top: 20px;
+    float: right !important;
+    }
+
+
+.navbar-nav {
+    text-decoration: underline;
+}
+
+@media (min-width: 768px) {
+    .navbar-nav {
+        width: 50%;
+        text-align: center;
+    }
+
+    .navbar-nav>li {
+        float: none;
+        display: inline-block;
+    }
+
+    .navbar-nav>li.navbar-right {
+        float: right !important;
+    }
+}
+
 
 .light-bg {
     background-color: #fff;
@@ -43,7 +74,8 @@ body {
     bottom: 5%;
     min-width: 30%;
     left: -2px;
-    background-color: #188181;
+    background-color: #0804ef;
+    border-radius: 5px;
 }
 
 .scale {
