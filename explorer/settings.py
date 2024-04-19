@@ -76,7 +76,7 @@ MIDDLEWARE = [
 ]
 
 
-ROOT_URLCONF = 'codestar.urls'
+ROOT_URLCONF = 'explorer.urls'
 
 TEMPLATES = [
     {
@@ -94,7 +94,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'codestar.wsgi.application'
+WSGI_APPLICATION = 'explorer.wsgi.application'
 
 
 # Database
