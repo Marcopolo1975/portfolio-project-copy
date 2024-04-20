@@ -84,9 +84,9 @@ body {
 }
 
 .author {
-    color: white;
+    color: #6c757d !important;
     margin: 4px;
-    text-transform: uppercase;
+    
 }
 
 .masthead {
