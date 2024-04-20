@@ -23,30 +23,7 @@ body {
 
 .navbar-text {
     margin-top: 20px;
-    float: right !important;
     }
-
-
-.navbar-nav {
-    text-decoration: underline;
-}
-
-@media (min-width: 768px) {
-    .navbar-nav {
-        width: 50%;
-        text-align: center;
-    }
-
-    .navbar-nav>li {
-        float: none;
-        display: inline-block;
-    }
-
-    .navbar-nav>li.navbar-right {
-        float: right !important;
-    }
-}
-
 
 .light-bg {
     background-color: #fff;
