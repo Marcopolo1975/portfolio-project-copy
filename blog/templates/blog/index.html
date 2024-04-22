@@ -10,12 +10,12 @@
 
         <!-- Blog Entries Column -->
         <div class="col-12 mt-3 left">
-            <div class="row">
+            <div class="row gy-3">
                 {% for post in post_list %}
                 <!--<div class="col-md-4">
                     <div class="card mb-4">-->
                         <div class="col-lg-4 col-md-4 col-sm-12">
-                            <div class="card mb-4 border-0 shadow p-3 bg-white rounded">
+                            <div class="card mb-4 border-0 shadow p-3 bg-white rounded h-100">
                         <div class="card-body">
                             <div class="image-container">
                                 {% if "placeholder" in post.featured_image.url %}
@@ -42,7 +42,7 @@
                 {% if forloop.counter|divisibleby:3 %}
             </div>
             <hr>
-            <div class="row">
+            <div class="row gy-3">
                 {% endif %}
                 {% endfor %}
 
