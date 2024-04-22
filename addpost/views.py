@@ -4,7 +4,7 @@ from .models import AddPost
 from .forms import AddPostForm
 
 
-def add_post(request):
+def addpost(request):
     
     if request.method == "POST":
         addpost_form = AddPostForm(data=request.POST)
