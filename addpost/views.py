@@ -10,7 +10,7 @@ def addpost(request):
         addpost_form = AddPostForm(data=request.POST)
         if addpost_form.is_valid():
             addpost_form.save()
-            messages.add_newpost(request, messages.SUCCESS, "Collaboration request received! I endeavour to respond within 2 working days.")
+            messages.add_newpost(request, messages.SUCCESS, "Post created successfully awaiting admins approval")
     addpost = AddPost.objects.all().order_by('-updated_on').first()
     addpost_form = AddPostForm()
 

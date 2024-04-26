@@ -1,8 +1,8 @@
-from .models import AddPostRequest
+from .models import AddPost
 from django import forms
 
 
 class AddPostForm(forms.ModelForm):
     class Meta:
-        model = AddPostRequest
-        fields = ('name', 'email', 'message')
+        model = AddPost
+        fields = ('title','title_image','content')
