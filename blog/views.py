@@ -96,3 +96,11 @@ def comment_delete(request, slug, comment_id):
             messages.add_message(request, messages.ERROR, 'You can only delete your own comments!')
 
         return HttpResponseRedirect(reverse('post_detail', args=[slug]))
+    
+def like_post(request, post_id):
+    post = get_object_or_404(Post, id=post_id)
+    if request.user in post.likes.all():
+        post.likes.remove(request.user)
+    else:
+        post.likes.add(request.user)
+    return HttpResponseRedirect(reverse('post_detail', post_id=post.id))
